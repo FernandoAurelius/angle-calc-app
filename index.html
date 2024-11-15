@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,38 @@
     <link rel="shortcut icon" href="https://img.icons8.com/ios/100/math.png" type="image/x-icon">
     <title>Calculadora de Ângulos</title>
 </head>
-<body>
-    <header>
-        
-    </header>
-    <main>
 
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao">
+            <a href="#introducao" class="navegacao__botao">Introdução</a>
+            <a href="#calculadora" class="navegacao__botao">Calculadora</a>
+        </nav>
+    </header>
+    <main class="principal">
+        <div id="introducao">
+            <h1 class="introducao__titulo">Calculadora do <strong class="introducao__titulo-destaque">Flores</strong></h1>
+            <div class="introducao__paragrafos">
+                <p>Ano: 2024</p>
+                <p>Disciplina: Matemática</p>
+            </div>
+        </div>
+        <div id="calculadora">
+            <form class="calculadora__formulario">
+                <h3 class="calculadora__formulario__titulo">Escolha o tipo de ângulo:</h3><br>
+                <input type="radio" id="grau" name="angulo" value="grau">
+                <label for="grau">Grau</label><br>
+                <input type="radio" id="radiano" name="angulo" value="radiano">
+                <label for="radiano">Radiano</label><br>
+                <label for="angulo">Entre o ângulo:</label><br>
+                <input type="number" name="angulo" id="angulo"><br>
+                <input type="submit" value="Calcular">
+            </form>
+        </div>
     </main>
-    <footer>
-        
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por <a href="">FernandoAurelius</a></p>
     </footer>
 </body>
+
 </html>

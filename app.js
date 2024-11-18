@@ -1,1 +1,3 @@
-
+function calcularAngulo() {
+    alert("Teste");
+}
